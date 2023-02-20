@@ -1,0 +1,65 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    // background: linear-gradient(to right, rgb(123, 176, 230) , rgb(158, 252, 158), rgb(139, 233, 241));
+    min-height: 100vh;
+}
+nav{
+    height: 80px;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 0% .5rem 0 2rem;
+    letter-spacing: 1;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin-right: .5rem;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.brand_logo{
+    font-size: 28px;
+    font-weight: 800
+}
+.menu_btn{
+    display: none;
+}
+
+@media (max-width: 600px){
+    nav ul{
+        display: block;
+        text-align: center;
+        top: 80px;
+        left: -100%;
+        position: fixed;
+        height: 100vh;
+        background-color: #111;
+        width: 100%;
+    }
+    nav ul li{
+        margin: 2rem 0;
+    }
+
+    .menu_btn{
+        display: block;
+    }
+    #chick:checked~ul{
+        left: 0%;
+    }
+}
+
